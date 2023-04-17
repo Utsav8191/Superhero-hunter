@@ -1,0 +1,230 @@
+
+@media (max-width: 820px) {
+  /*-----Index Page-----*/
+  /* Nav Section */
+  #nav-section {
+    height: 10vh; 
+  }
+  #nav-section> a {
+   width: 20%;
+   justify-content: center;
+  }
+  .logo-text-content {
+    display: none;
+  }
+  .logo-container {
+    width: 50%;
+  }
+    /*--Index page: First Section--*/
+  #first-section{
+    /* width: 100%; */
+    margin-top: 8vh;
+    height: 40vh;
+  }
+    /*--Index page: Second Section--*/
+  #second-section {
+    /* width: 100%; */
+    height: 52vh;
+    border-top: 4px solid  #181616;
+  }
+    /*--Index page: Third Section--*/
+  #third-section {
+    height: auto;
+  }  
+  .title-container {
+    height: 90px;
+    justify-content: space-between;
+  }      
+  .title-container> h2 {
+    width: 45%;
+    padding-left: 1rem;
+    font-size: 2rem; 
+  }
+  .title-container> p {
+    width: 45%;
+    font-size: 2.4rem;
+  }
+  .main-tile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(24, 20, 20);
+  }
+  .character-card {
+    width: 80%;
+    height: 20rem;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  .character-image {
+    position: absolute;    
+  }
+  .about-character {
+    width: 65%;
+    height: 42%;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    transform: translateX(-130%);    
+  }
+  .character-card:hover> .about-character {
+    transform: translateX(53%);
+    transition: transform 600ms;
+  }
+  .character-card> img:hover {
+    transform: scale(150%) translateY(-25px) translateX(-110px);
+    transition: 500ms linear;
+  }
+  .video-tile {
+    width: 100%;
+  }
+  .video-tile> video {
+    width: 100%;
+    height: 100%;
+  }  
+  /*--Footer Section--*/
+  footer {
+    height: 3vh;
+  }  
+  footer> p {
+    font-size: 1rem;
+  }
+
+}
+
+@media (max-width: 576px) {
+ 
+  /* Nav Section */
+  #nav-section {
+    height: 9vh; 
+  }
+  #nav-section> a {
+   width: 14%;
+   justify-content: flex-end;
+  }
+  .logo-text-content {
+    display: none;
+  }
+  .logo-container {
+    width: 65%;
+    height: 98%;
+  }
+  /*--Index page: First Section--*/
+  #first-section{
+    margin-top: 8vh;
+    height: 42vh;
+  }
+  /*--Index page: Second Section--*/
+  #second-section {
+    height: 45vh;
+  }
+  /*--Index page: Third Section--*/
+  #third-section {
+    height: auto;
+  }  
+  .title-container {
+    height: 115px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }      
+  .title-container> h2 {
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    font-size: 2rem;
+    letter-spacing: 1px; 
+  }
+  .title-container> p {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    font-size: 2rem;
+    letter-spacing: 1px;
+  }
+  .character-card {
+    width: 100%;
+    height: 20rem;
+    justify-content: center;
+  }
+  .character-image {
+    position: absolute;    
+  }
+  .about-character {
+    width: 64%;
+    height: 42%;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    line-height: 1.5rem;
+    transform: translateX(-130%);    
+  }
+  .character-card:hover> .about-character {
+    transform: translateX(54%);
+    transition: transform 600ms;
+  }
+  .character-card> img:hover {
+    transform: scale(135%) translateY(-25px) translateX(-110px);
+    transition: 500ms ease-in-out;
+  }
+  /*--Footer Section--*/
+  footer> p {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 425px) {
+  /* Nav Section */
+  #nav-section {
+    height: 9vh; 
+  }
+  #nav-section> a {
+   width: 14%;
+   justify-content: flex-end;
+  }
+  .logo-text-content {
+    display: none;
+  }
+  .logo-container {
+    width: 80%;
+    height: 98%;
+  }
+  .anchor-container {
+    width: 70%;
+  }
+  .anchor-container>a {
+    font-size: .9rem;
+  }
+  .right-image {
+    width: 14%;
+  }
+  /*--Input Box--*/
+  .input-container {
+    width: 22rem;
+    height: 2.6rem;
+  }
+  /*--Index page: Third Section--*/
+  .character-card {
+    width: 100%;
+    height: 16rem;
+    justify-content: center;
+    /* border: 2px dashed yellow; */
+  }
+  .character-image {
+    position: absolute;    
+  }
+  .about-character {
+    width: 68%;
+    height: 48%;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    line-height: 1.5rem;
+    transform: translateX(-132%);   
+  }
+  .character-card:hover> .about-character {
+    transform: translateX(47%);
+    transition: transform 600ms;
+  }
+  .character-card> img:hover {
+    transform: scale(135%) translateY(-25px) translateX(-100px);
+    transition: 500ms ease-in-out;
+  }  
+}

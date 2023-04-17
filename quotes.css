@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  --primary-font-family: poppins, sans-serif;
+  --body-bg: black;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: var(--body-bg);
+}
+
+section {
+  height: 100%;
+  margin-top: 14vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* border: 2px dotted rgb(16, 240, 9); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow-y: scroll;
+}
+section::-webkit-scrollbar {
+  display: none;
+}
+
+/*---Quote Tiles---*/
+
+.main-tile {
+  width: 98%;
+  height: 5.7rem;
+  margin-top: .6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  box-shadow: 0px 0px 6px 2px inset rgb(110, 108, 108);  
+}
+.main-tile> h2 {
+  font-family: var(--primary-font-family);
+  font-size: 1.6rem;
+  letter-spacing: 1px;
+  color: white;
+  text-align: center;
+}
+.main-tile> h2::before {
+  content: open-quote;
+  letter-spacing: 2px;
+  font-family: sans-serif;
+  color: rgb(228, 31, 31);
+  font-size: 2.1rem;
+}
+.main-tile> h2::after {
+  content: close-quote;
+  letter-spacing: 2px;
+  font-family: sans-serif;
+  color: rgb(228, 31, 31);
+  font-size: 2.1rem;
+}
+.main-tile> p {
+  color: rgb(228, 31, 31);
+  font-family: caveat, cursive;
+  letter-spacing: 1px;
+  font-size: 1.8rem;
+  text-align: center;
+}

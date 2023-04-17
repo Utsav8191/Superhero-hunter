@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  --Footer-bg-color: #ec1d23;
+  --nav-bg-color: black;
+  --primary-font-family : poppins, sans-serif; 
+}
+
+
+#nav-section {
+  width: 100%;
+  height: 12vh;
+  /* border: 2px dashed rgb(255, 255, 255); */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  background-color: var(--nav-bg-color);
+  box-shadow: 0px 0px 8px 3px #ec1d23;
+}
+
+/* Left Section (Logo & Text-Content) */
+/* Logo-Section */
+#nav-section> a {
+  width: 18%;
+  height: 100%;
+  display: flex;
+  text-decoration: none;
+  /* border: 2px dotted white; */
+}
+.logo-container {
+  width: 36%;
+  height: 100%;
+}
+
+.logo-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.logo-text-content {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo-text-content p { 
+  color: white;
+  font-size: 1.4rem;
+  font-weight: 600;
+  font-family: poppins, sans-serif;  
+}
+.logo-text-content p:last-child {
+  font-size: 1.8rem;
+  letter-spacing: 1px;
+  font-family: caveat, cursive; 
+  font-weight: bold; 
+  color: #ec1d23;
+}
+.logo-container:hover {
+  transform: scale(110%) translateY(8px);
+  transition: transform 500ms;
+}
+
+/* Middle Section (Anchor Texts) */
+.anchor-container {
+  width: 60%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  /* border: 2px dotted white;  */
+}
+.anchor-container>a {
+  font-size: 1rem;
+  text-decoration: none;
+  letter-spacing: 1px;
+  color: #ec1d23;
+  font-family: poppins, sans-serif; 
+}
+.anchor-container>a:hover {
+  color: #dad6d6;
+  transition: color 500ms;
+}
+
+/* Right Section (Image) */
+
+.right-image {
+  width: 18%;
+  height: 100%;
+  /* border: 2px dotted white;    */
+}
+.right-image> img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  opacity: 0.8;
+}
+
+
+footer {
+  width: 100%;
+  background: transparent;
+  /* position: absolute;
+  bottom: -1px; */
+  background-color: black;
+  /* border: 2px dashed rgb(240, 237, 237);  */
+}
+footer> p {
+  font-size: .9rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: rgb(231, 225, 225);
+  font-family: var(--primary-font-family);
+  text-align: center;
+}

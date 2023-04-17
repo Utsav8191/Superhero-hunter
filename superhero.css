@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  --primary-font-family : poppins, sans-serif;
+  --body-bg-color: linear-gradient(to right, #000000, #434343);
+  --section-bg-color: linear-gradient(to right, #e52d27, #b31217);  
+}
+
+body {
+  height: 130vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: black;
+}
+main {
+  margin-top: 14vh;
+  width: 98%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 1.1rem;
+  justify-content: space-between;
+  /* border: 2px dashed white; */
+}
+
+/*---Main---*/
+
+.first-column {
+  width: 22%;
+  height: 25rem;
+  /* border: 2px solid rgb(255, 255, 255); */
+}
+.first-column> img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.second-column {
+  width: 77%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  /* border: 2px dotted rgb(201, 27, 27); */
+}
+
+.title-tile {
+  height: 8%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: .5rem;
+  border: 2px solid red;
+}
+.title-tile> h2 {
+  color: white;
+  font-size: 1.8rem;
+  letter-spacing: 2px;
+  font-family: var(--primary-font-family);
+}
+
+/* Stats Section Begins */
+.stats-dimensions {
+  width: 100%;
+  height: 31%;
+  margin-top: .6rem;
+  /* border: 2px solid white; */
+}
+
+/* Stat Inner tiles */
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.tiles {
+  width: 100%;
+  height: 2.2rem;
+  margin: .7rem 0rem;
+  /* border: 1px solid rgb(33, 214, 16); */
+}
+.stats-subtitle {
+  color: rgb(255, 255, 255);
+  font-size: .8rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-family: var(--primary-font-family);
+}
+.stat-bar {
+  width: 100%;
+  height: .8rem;
+  margin-top: 2px;
+  /* padding-left: .8px; */
+  border-top: 1.5px solid rgb(216, 40, 40);
+  border-bottom: 1.5px solid rgb(216, 40, 40);
+}
+.percent {  
+  height:100%;  
+  background-color: rgb(230, 200, 27);
+}
+#intelligence-percent {
+  width: 85%;
+}
+#strength-percent {
+  width: 50%;
+}
+#speed-percent {
+  width: 70%;
+}
+#durability-percent {
+  width: 88%;
+}
+#power-percent {
+  width: 95%;
+}
+
+/*---Appearance Section---*/
+.appearance-section {
+  height: 28% !important;
+  /* border: 2px solid rgb(245, 242, 243);  */
+  display: flex;
+  flex-direction: column;
+}
+.appearance-section> h2 {
+  color: white;
+  text-align: center;
+  font-size: 1.6rem;
+  font-family: var(--primary-font-family);
+} 
+.appearance-tile {
+  width: 100%;
+  height: 2rem;
+  padding-left: 1px;
+  /* text-align: center; */
+  /* border: 1.5px solid rgb(163, 77, 91); */
+}
+.title {
+  color: rgb(228, 225, 225);
+  font-size: 1.5rem;
+  font-family: var(--primary-font-family);
+}
+.span-color {
+  color: rgb(233, 21, 21) ;
+  font-size: 1.3rem;
+  font-family: inherit;
+}
+
+/*--Work Details Section--*/
+.work-section {
+  width: 100%;
+  height: 18%;
+  display: flex;
+  flex-direction: column;
+  margin-top: .7rem;
+  /* border: 2px solid white; */
+}
+.work-section> h2 {
+  color: white;
+  text-align: center;
+  font-size: 1.6rem;
+  font-family: var(--primary-font-family);
+}
+.work-tile {
+  width: 100%;
+  height: 2rem;
+  padding-left: 1px;
+  /* border: 1.5px solid rgb(209, 20, 51);  */
+}

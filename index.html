@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600&family=Open+Sans:wght@400;500&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="nav-footer.css"> 
+  <link rel="stylesheet" href="input-box.css">
+  <link rel="stylesheet" href="responsive.css">
+  <script defer src="https://kit.fontawesome.com/d13d4de4a3.js" crossorigin="anonymous"></script> 
+  <title>Home</title>
+</head>
+<body>
+  <nav id="nav-section">
+    <!-- Left Section (Logo & Text-Content)-->
+    <a href="#">
+      <div class="logo-container">
+        <img src="assets/PNG-images/ironman-logo.png" alt="logo">
+      </div>
+      <div class="logo-text-content">
+        <p>Superhero</p>
+        <p>Hunter</p>
+      </div>
+    </a>
+    <!-- Middle Section (Anchor Texts) -->
+    <div class="anchor-container">
+      <a href="#">Home</a>
+      <a href="quotes.html">Quotes</a>
+      <a href="favourites.html">Favourites</a>
+    </div>
+    <!-- Right Section (Image) -->
+    <div class="right-image">
+      <img src="assets/PNG-images/captain-shield.png" alt="avengers">
+    </div>
+  </nav>
+
+  <main>
+    <section id="first-section">
+
+    </section>
+
+    <section id="second-section">
+          <!----Input box---->
+    <div class="input-container">
+      <input type="search" id="input-field" placeholder="Search Heroes" value="">
+      <button type="search" onclick="handleSearch()"><i class="fa-solid fa-magnifying-glass"></i></button>
+    </div>
+      <video src="assets/Marvel Epic Main Intro Theme Music (Full Version) Phase 4 Opening Music.mp4" muted loop autoplay></video>
+      <!-- <div class="hero-container">
+
+      </div> -->
+    </section>
+
+    <section id="third-section">
+      <div class="title-container">       
+          <h2>And Once A Legend Said,</h2>
+          <p>I am Groot</p>       
+      </div>
+      <div class="main-tile-container">
+        <div class="character-card">
+          <img class="character-image" src="assets/PNG-images/baby-groot.png" alt="Groot">
+          <p class="about-character">
+            This sentient alien tree branches out of his comfort zone to help the Guardians of the Galaxy keep the people of the universe safe.
+          </p>
+        </div>
+        
+        <div class="video-tile">
+          <video src="assets/groot-edited.mp4" muted loop autoplay></video>
+        </div>
+      </div>
+
+    </section>
+  </main>
+  <footer>
+    <p>Made With <i class="fa-sharp fa-solid fa-heart" style="color: #ff0505;"></i> By Utsav</p>
+  </footer>
+
+
+</body>
+<script src="index.js"></script>
+</html>

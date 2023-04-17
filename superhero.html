@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600&family=Open+Sans:wght@400;500&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="nav-footer.css">
+  <link rel="stylesheet" href="superhero.css">
+  <link rel="stylesheet" href="responsive.css">
+  <link rel="stylesheet" href="superhero-responsive.css">
+  <title>Superhero Page</title>
+  <script defer src="https://kit.fontawesome.com/d13d4de4a3.js" crossorigin="anonymous"></script> 
+</head>
+<body>
+  <nav id="nav-section">
+    <!-- Left Section (Logo & Text-Content)-->
+    <a href="index.html">
+      <div class="logo-container">
+        <img src="assets/PNG-images/ironman-logo.png" alt="logo">
+      </div>
+      <div class="logo-text-content">
+        <p>Superhero</p>
+        <p>Hunter</p>
+      </div>
+    </a>
+    <!-- Middle Section (Anchor Texts) -->
+    <div class="anchor-container">
+      <a href="index.html">Home</a>
+      <a href="quotes.html">Quotes</a>
+      <a href="favourites.html">Favourites</a>
+    </div>
+    <!-- Right Section (Image) -->
+    <div class="right-image">
+      <img src="assets/PNG-images/captain-shield.png" alt="avengers">
+    </div>
+  </nav>
+  <main>
+    <!--Dividing the details page into two columns first column contains the image and 2nd column basic details-->
+    <div class="first-column">
+      <img src="assets/PNG-images/captain-america.jpg" alt="">
+    </div>
+
+    <div class="second-column">
+      <div class="title-tile">
+        <h2>Hero-Name</h2>
+      </div>
+
+    <div class="stats-section stats-dimensions">
+
+      <div class="intelligence-tile tiles flex-column">
+        <p class="stats-subtitle">Intelligence</p> 
+        <div class="stat-bar">
+          <div id="intelligence-percent" class="percent"></div>
+        </div>
+      </div>
+      <div class="intelligence-tile tiles flex-column">
+        <p class="stats-subtitle">Strength</p>
+        <div class="stat-bar">
+          <div id="strength-percent" class="percent"></div>
+        </div>
+      </div>
+      <div class="intelligence-tile tiles flex-column">
+        <p class="stats-subtitle">Speed</p>
+        <div class="stat-bar">
+          <div id="speed-percent" class="percent"></div>
+        </div>
+      </div>
+      <div class="intelligence-tile tiles flex-column">
+        <p class="stats-subtitle">Durability</p>
+        <div class="stat-bar">
+          <div id="durability-percent" class="percent"></div>
+        </div>
+      </div>
+      <div class="intelligence-tile tiles flex-column">
+        <p class="stats-subtitle">Power</p>
+        <div class="stat-bar">
+          <div id="power-percent" class="percent"></div>
+        </div>
+      </div>
+
+    </div>
+    <div class="appearance-section stats-dimensions">
+      <h2>Appearance</h2>
+      <div class="appearance-tile">
+        <p class="title">Gender : &nbsp;<span id="gender" class="span-color">Male</span></p>
+      </div>
+      <div class="appearance-tile">
+        <p class="title">Race : &nbsp;<span id="race" class="span-color">Male</span></p>
+      </div>
+      <div class="appearance-tile">
+        <p class="title">Height : &nbsp;<span id="height" class="span-color">Male</span></p>
+      </div>
+      <div class="appearance-tile">
+        <p class="title">Weight : &nbsp;<span id="weight" class="span-color">Male</span></p>
+      </div>
+      <div class="appearance-tile">
+        <p class="title">Eye-Color : &nbsp;<span id="eyeColor" class="span-color">Male</span></p>
+      </div>
+    </div>
+    <div class="work-section">
+      <h2>Work</h2>
+      <div class="work-tile">
+        <p class="title">Occupation : &nbsp;<span id="occupation-name" class="span-color">Male</span></p>
+      </div>
+      <div class="work-tile">
+        <p class="title">Base : &nbsp;<span id="base" class="span-color">Male</span></p>
+      </div>
+    </div>  
+    </div>
+   
+  </main>
+</body>
+<script src="superhero.js"></script>
+</html>

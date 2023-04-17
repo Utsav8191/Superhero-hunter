@@ -1,0 +1,189 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  --primary-font-family : poppins, sans-serif;
+  --main-font-color: white;
+  --primary-bg-color: #c0392b;
+  --section-tile-bg-color: linear-gradient(to right, #ed213a, #93291e 80%);
+}
+
+body {
+  height: auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+/*--First Half--*/
+
+#first-section{
+  height: 45vh;
+  background: url("assets//Wallpapers/Mcu-Wallpaper.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+
+/*--Second Half--*/
+#second-section {
+  position: relative;
+  height: 55vh;
+  border-top: 3px solid  #181616;
+}
+.hero-container {
+  width: 96%;
+  height: 90%;
+  position: absolute;
+  top: 8%;
+  left: 50%;
+  display: flex;
+  justify-content: center;
+  gap: .5rem;
+  transform: translateX(-50%);
+  /* border: 2px solid rgb(211, 208, 208); */
+  background-color: #242121;
+}
+.hero-card {
+  width: 14%;
+  height: 65%;
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid rgb(231, 231, 231);
+  cursor: pointer;
+}
+.hero-image-container {
+  width: 100%;
+  height: 82%;
+  overflow: hidden;
+  border-bottom: 2px solid rgb(233, 233, 233);
+}
+.hero-image-container> img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.hero-card:hover> .hero-image-container> img {
+  transform: scale(115%);
+  transition: transform 0.3s;
+}
+.hero-content {
+  width: 100%;
+  height: 18%;
+  display: flex;
+  align-items: center;
+  /* border: 2px dashed salmon; */
+}
+.hero-content> p {
+  width: 75%;
+  color: var(--main-font-color);
+  font-family: var(--primary-font-family);
+  font-size: .9rem;
+}
+.hero-content> button {
+  width: 20%;
+  height: 90%;
+  background: transparent;
+  border-radius: 50%;
+  border: 2px solid rgb(214, 22, 22);
+}
+.heart-icon {
+  text-align: center;
+  font-size: 1rem;
+  color: rgb(247, 248, 248);
+}
+
+#second-section> video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Third-Half */
+
+#third-section {
+  height: 54vh;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(206, 29, 29);
+  border-top: 3px solid #251e1e;
+}
+.title-container {
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  background-color: rgba(206, 29, 29, 2);
+  border-bottom: 3px solid #251e1e;
+}
+.title-container> h2 {
+  width: 30%;
+  font-size: 2.2rem;
+  letter-spacing: 1px;
+  font-family: caveat, cursive;
+}
+.title-container> p {
+  width: 30%;
+  font-size: 2.8rem;
+  color: whitesmoke;
+  text-align: start;
+  padding: 5px 0px;;
+  font-family: poppins; 
+}
+
+.title-container> p::before {
+  content: open-quote;
+  color: black;  
+  font-size: 3rem;
+}
+.title-container> p::after {
+  content: close-quote;
+  color: rgb(37, 34, 34); 
+  font-size: 3rem;
+}
+.main-tile-container {
+  height: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+.character-card {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  position: relative;
+}
+.character-image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  object-fit: contain;
+}
+.about-character {
+  width: 57%;
+  height: 35%;
+  text-align: start;
+  font-size: 1rem;
+  line-height: 1.2rem;
+  color: rgb(224, 223, 223);
+  font-family: var(--primary-font-family);
+  transform: translateX(-110%);
+  z-index: 0;
+}
+.character-card:hover> .about-character {
+  transform: translateX(72%);
+  transition: transform 600ms;
+}
+.character-card> img:hover {
+  transform: scale(150%) translateY(-30px) translateX(-82px);
+  transition: 500ms linear;
+}
+.video-tile {
+  width: 65%;
+}
+.video-tile> video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
